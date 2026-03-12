@@ -29,7 +29,7 @@ npm install -g @google/gemini-cli
 ### 2. Set your API key
 
 ```bash
-export NANOBANANA_API_KEY="your-api-key"
+export GEMINI_API_KEY="your-api-key"
 ```
 
 ### 3. Install the nanobanana extension

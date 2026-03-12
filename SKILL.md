@@ -31,7 +31,7 @@ Do NOT attempt to generate images through any other method.
    ```
 3. Verify API key is set:
    ```bash
-   [ -n "$NANOBANANA_API_KEY" ] && echo "API key configured" || echo "Missing NANOBANANA_API_KEY"
+   [ -n "$GEMINI_API_KEY" ] && echo "API key configured" || echo "Missing GEMINI_API_KEY"
    ```
 
 ## Command Selection
@@ -143,7 +143,7 @@ When the user asks for changes:
 
 | Problem | Solution |
 |---------|----------|
-| `NANOBANANA_API_KEY` not set | `export NANOBANANA_API_KEY="your-key"` |
+| `GEMINI_API_KEY` not set | `export GEMINI_API_KEY="your-key"` |
 | Extension not found | Run install command from setup section |
 | Quota exceeded | Wait for reset or switch to flash model |
 | Image generation failed | Check prompt for policy violations, simplify request |
