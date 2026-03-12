@@ -29,7 +29,7 @@ npm install -g @google/gemini-cli
 ### 2. Set your API key
 
 ```bash
-export NANOBANANA_GEMINI_API_KEY="your-api-key"
+export NANOBANANA_API_KEY="your-api-key"
 ```
 
 ### 3. Install the nanobanana extension
@@ -67,23 +67,24 @@ Once installed, Claude Code will automatically use this skill when you ask for i
 
 | Command | Description |
 |---------|-------------|
-| `/generate` | Text-to-image generation |
-| `/edit` | Modify existing images |
-| `/restore` | Repair damaged photos |
-| `/icon` | Generate app icons |
-| `/diagram` | Create flowcharts and diagrams |
-| `/pattern` | Generate seamless patterns |
-| `/story` | Create sequential/narrative images |
-| `/nanobanana` | Natural language interface |
+| `gemini --yolo "/generate 'prompt'"` | Text-to-image generation |
+| `gemini --yolo "/edit file.png 'instruction'"` | Modify existing images |
+| `gemini --yolo "/restore photo.jpg 'fix scratches'"` | Repair damaged photos |
+| `gemini --yolo "/icon 'description'"` | Generate app icons |
+| `gemini --yolo "/diagram 'description'"` | Create flowcharts and diagrams |
+| `gemini --yolo "/pattern 'description'"` | Generate seamless patterns |
+| `gemini --yolo "/story 'description'"` | Create sequential/narrative images |
+| `gemini --yolo "/nanobanana prompt"` | Natural language interface |
 
 ## Common Options
 
 | Option | Description |
 |--------|-------------|
+| `--yolo` | Auto-approve all tool actions (required) |
 | `--count=N` | Generate N variations (1-8) |
 | `--preview` | Auto-open generated images |
 | `--styles="style1,style2"` | Apply artistic styles |
-| `--seed=N` | Seed for reproducible results |
+| `--aspect=ratio` | Set image aspect ratio (e.g. 16:9, 9:16) |
 
 ## Output
 
